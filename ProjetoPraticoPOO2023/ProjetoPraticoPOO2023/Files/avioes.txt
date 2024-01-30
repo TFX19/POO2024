@@ -1,0 +1,4 @@
+1;Bombardier Challenger 350;10;
+2;Embraer Phenom 300;9;
+3;Cessna Citation Latitude;12;
+4;Bombardier Global 6000;17;

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AACC0490-3C83-4CFF-A25E-C1439A4EBF6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoPraticoPOO2023</RootNamespace>
+    <AssemblyName>ProjetoPraticoPOO2023</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CancelarBilhetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelarBilhetes.Designer.cs">
+      <DependentUpon>CancelarBilhetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Aviao.cs" />
+    <Compile Include="Classes\Bilhete.cs" />
+    <Compile Include="Classes\BilheteEfetivo.cs" />
+    <Compile Include="Classes\BilheteSuplente.cs" />
+    <Compile Include="Classes\Gestor.cs" />
+    <Compile Include="Classes\Passageiro.cs" />
+    <Compile Include="Classes\Rota.cs" />
+    <Compile Include="Classes\Voo.cs" />
+    <Compile Include="ComprarBilhetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprarBilhetes.Designer.cs">
+      <DependentUpon>ComprarBilhetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGAdmin.Designer.cs">
+      <DependentUpon>FormGAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGPassageiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGPassageiro.Designer.cs">
+      <DependentUpon>FormGPassageiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InserirRotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InserirRotas.Designer.cs">
+      <DependentUpon>InserirRotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InserirVooRota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InserirVooRota.Designer.cs">
+      <DependentUpon>InserirVooRota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarPassageirosEfetivosVoo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarPassageirosEfetivosVoo.Designer.cs">
+      <DependentUpon>MostrarPassageirosEfetivosVoo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarRotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarRotas.Designer.cs">
+      <DependentUpon>MostrarRotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarViagensRealizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarViagensRealizadas.Designer.cs">
+      <DependentUpon>MostrarViagensRealizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarVoosRota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarVoosRota.Designer.cs">
+      <DependentUpon>MostrarVoosRota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistarPassageiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistarPassageiro.Designer.cs">
+      <DependentUpon>RegistarPassageiro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CancelarBilhetes.resx">
+      <DependentUpon>CancelarBilhetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprarBilhetes.resx">
+      <DependentUpon>ComprarBilhetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGAdmin.resx">
+      <DependentUpon>FormGAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGPassageiro.resx">
+      <DependentUpon>FormGPassageiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserirRotas.resx">
+      <DependentUpon>InserirRotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserirVooRota.resx">
+      <DependentUpon>InserirVooRota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarPassageirosEfetivosVoo.resx">
+      <DependentUpon>MostrarPassageirosEfetivosVoo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarRotas.resx">
+      <DependentUpon>MostrarRotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarViagensRealizadas.resx">
+      <DependentUpon>MostrarViagensRealizadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarVoosRota.resx">
+      <DependentUpon>MostrarVoosRota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistarPassageiro.resx">
+      <DependentUpon>RegistarPassageiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp_airport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flying routes.png" />
+    <Content Include="Resources\ticketvisual.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
